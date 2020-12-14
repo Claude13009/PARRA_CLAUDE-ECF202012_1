@@ -1,0 +1,322 @@
+
+/* ====== NOTES ====== */
+
+1 . recalibrer les tailles des polices
+2 .   
+
+/* ====== REMARQUES ====== */
+/* ====== @IMPORTS ====== */
+ @import url('https://fonts.googleapis.com/css2? family = Varela + Round & display = swap');
+/*                                         &&&&&&&&&&&&&&&                                                */
+/*                                         &&&&&&&&&&&&&&&                                                */
+/* +++++++++++++++++++++++++++++++++++++++++++++ * HTML * +++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/*====== PARAMETRAGE GLOBAL ====== */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+/* ====== STYLES GROUPES ELEMENTS MAJEURS ====== */
+header, main, footer
+{
+  margin: 0;
+  padding: 0;
+  width: 96vw;
+}
+
+section article, header, aside, footer
+{
+  background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%);
+}
+
+header h1, header h2
+{
+  margin: 0;
+  padding-top: 2%;
+  height: 90%;
+  width: 40%;
+}
+
+/* body, header, main, footer
+{
+  border:0.3rem solid black;
+} */
+
+/* +++++++++++++++++++++++++++++++++++++++++++++ * FIN HTML * +++++++++++++++++++++++++++++++++++++++++++ */
+/*                                         &&&&&&&&&&&&&&&                                                */
+/*                                         &&&&&&&&&&&&&&&                                                */
+/* +++++++++++++++++++++++++++++++++++++++++++++ * BODY * +++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* ====== STYLE GENERAL ====== */
+body
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;       
+  color: black;
+  font-family: 'Varela Round', sans-serif;      
+  background: linear-gradient(180deg, rgb(48, 45, 53) 0%, rgb(117, 83, 113) 50%, rgb(189, 150, 187) 90%);
+  opacity: 1 ;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-columns: 10rem 50% auto;
+  grid-gap: 0.2rem;
+}
+/* ====== STYLE des CLASSES ====== */
+/* ====== STYLE des ID ====== */
+/* ====== STYLE ANNEXES ====== */
+
+/* +++++++++++++++++++++++++++++++++++++++++++++ * BODY_FIN * +++++++++++++++++++++++++++++++++++++++++++ */
+/*                                         &&&&&&&&&&&&&&&                                                */
+/*                                         &&&&&&&&&&&&&&&                                                */
+/* +++++++++++++++++++++++++++++++++++++++++++++ * HEADER * +++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* ====== STYLE GENERAL ====== */
+header
+{
+  display: flex;
+  justify-content: space-around;
+  background: #333;
+  margin: 0;
+  padding: 0;
+  width: 96vw;
+  height: 15vh;
+  opacity: 1;
+  /* background: rgb(94,11,187); */
+  /* background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%); */
+  border: black solid 0.1rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  box-shadow: 0.2rem 0.2rem 0rem rgb(36, 34, 34);
+  font-size: 1rem;
+  font-family: 'Varela Round', sans-serif;
+  filter: drop-shadow(0.5rem 0.5rem 0.2rem #000000);
+  -webkit-filter: drop-shadow(0.5rem 0.5rem 0.2rem #4444dd);
+}
+/* ====== STYLE des CLASSES ====== */
+/* ====== STYLE des ID ====== */
+/* ====== STYLE ANNEXES ====== */
+
+/* +++++++++++++++++++++++++++++++++++++++++++++ * HEADER_FIN * +++++++++++++++++++++++++++++++++++++++++ */
+/*                                         &&&&&&&&&&&&&&&                                                */
+/*                                         &&&&&&&&&&&&&&&                                                */
+/* +++++++++++++++++++++++++++++++++++++++++++++ * MAIN * +++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* ====== STYLE GENERAL ====== */
+main
+{
+  margin: 0;
+  padding: 0;
+  height: 70vh;
+  grid-column: span 4;
+  opacity: 1 ;
+}
+ /* ________________________________________élements de MAIN____________________________________________ */
+h3
+{
+  margin-left: 10%;
+  text-align: center;
+}
+
+section
+{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+section article
+{
+  color:black;
+  background: #333;
+  /* background: linear-gradient(180deg, rgb(3, 20, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%); */
+  border: black solid 0.1rem;
+  border-radius: 10rem ;
+  -webkit-border-radius: 10rem ;
+  -moz-border-radius: 10rem ;
+  -ms-border-radius: 10rem ;
+  -o-border-radius: 10rem ;
+  box-shadow: 0.2rem 0.2rem 0rem rgb(36, 34, 34);
+  font-size: 2.5rem;
+  font-family: 'Varela Round', sans-serif;
+}
+
+section.search ul, section.search div
+{
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+section.search
+{
+  margin: 0;
+  height: 20%;
+}
+
+section.recentSearch
+{
+  margin: 0;
+  padding: 0;
+  text-align: center;      
+}
+
+section.recentSearch button
+{
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+section.recentSearch ul
+{
+  display: none;
+}
+
+section.vignettes
+    {
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+a:link, a:visited
+    {
+      color: black;
+      text-decoration: none;
+      font-variant: small-caps;
+    }
+
+a:hover
+{
+  font-weight: bold;
+}
+/* ====== STYLE des CLASSES ====== */
+.myInputs input
+{
+   border-radius: 2rem;
+   -webkit-border-radius: 2rem;
+   -moz-border-radius: 2rem;
+   -ms-border-radius: 2rem;
+   -o-border-radius: 2rem;
+}
+
+.myInputs input::placeholder
+{
+  color: rgb(0, 0, 0);
+  font-variant: small-caps;
+  opacity: 1;
+}
+/* ====== STYLE des ID ====== */
+/* ====== STYLE ANNEXES ====== */
+
+/* +++++++++++++++++++++++++++++++++++++++++ * MAIN_FIN * +++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                         &&&&&&&&&&&&&&&                                                */
+/*                                         &&&&&&&&&&&&&&&                                                */
+/* +++++++++++++++++++++++++++++++++++++++++++++ * ASIDE * ++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* ====== STYLE GENERAL ====== */
+aside
+{
+  display: none;
+  grid-column: span 2;
+  background: #333;
+  padding: 20rem;
+  opacity: 0.6 ;
+  background: rgb(94,11,187);
+  /* background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%); */
+  border: black solid 1rem;
+  border-radius: 20rem ;
+  -webkit-border-radius: 20rem ;
+  -moz-border-radius: 20rem ;
+  -ms-border-radius: 20rem ;
+  -o-border-radius: 20rem ;
+  box-shadow: 2rem 2rem 0rem rgb(36, 34, 34);
+  font-size: 25rem;
+  font-family: 'Varela Round', sans-serif;
+  filter: drop-shadow(5rem 5rem 2rem #4444dd);
+  -webkit-filter: drop-shadow(5rem 5rem 1rem #050505); 
+}
+/* ====== STYLE des CLASSES ====== */
+/* ====== STYLE des ID ====== */
+/* ====== STYLE ANNEXES ====== */
+
+/* +++++++++++++++++++++++++++++++++++++++++++++ * ASIDE_FIN * ++++++++++++++++++++++++++++++++++++++++++ */ 
+/*                                         &&&&&&&&&&&&&&&                                                */
+/*                                         &&&&&&&&&&&&&&&                                                */
+/* +++++++++++++++++++++++++++++++++++++++++++++ * FOOTER * +++++++++++++++++++++++++++++++++++++++++++++ */
+
+/*STYLE GENERAL */
+footer
+{ 
+  margin: 0;
+  padding: 0;
+  width: 96vw;
+  height: 10vh;
+  grid-column: 1 / -1;
+  background: #333;
+  opacity: 1;
+  /* background: rgb(94,11,187); */
+  /* background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%); */
+  border: black solid 0.1rem;
+  border-radius: 2rem ;
+  -webkit-border-radius: 2rem ;
+  -moz-border-radius: 2rem ;
+  -ms-border-radius: 2rem ;
+  -o-border-radius: 2rem ;
+  box-shadow: 0.2rem 0.2rem 0rem rgb(36, 34, 34);
+  font-size: 1rem;
+  font-family: 'Varela Round', sans-serif;
+  filter: drop-shadow(0.5rem 0.5rem 0.2rem #000000);
+  -webkit-filter: drop-shadow(0.5rem 0.5rem 0.2rem #000000);
+}
+ /* ________________________________________élements de MAIN____________________________________________ */
+footer img
+    {
+      height: 50%;
+      margin-left: 45%;
+      margin-top: 3%;
+    }
+/* ====== STYLE des CLASSES ====== */
+/* ====== STYLE des ID ====== */
+/* ====== STYLE ANNEXES ====== */
+
++/* +++++++++++++++++++++++++++++++++++++++++++++ * FOOTER_FIN * +++++++++++++++++++++++++++++++++++++++++ */
+/*                                         &&&&&&&&&&&&&&&                                                */
+/*                                         &&&&&&&&&&&&&&&                                                */
+
+/* ====== @MEDIA QUERIES ====== */
+@media screen and (min-width:780rem){
+
+  section
+  {
+    width: 70vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  #sidebar{
+    display: block;
+    width: 30vw;
+  }
+}
+
+@media screen and (min-width:1200rem){
+  
+}
+
+
+/* 123456789_1234567890_1234567890_1234567890_1234567890_123 */
