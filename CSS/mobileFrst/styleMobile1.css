@@ -1,8 +1,8 @@
 
 /* ====== NOTES ====== */
 
-1 . recalibrer les tailles des polices
-2 .   
+/* 1 . recalibrer les tailles des polices
+2 .    */
 
 /* ====== REMARQUES ====== */
 /* ====== @IMPORTS ====== */
@@ -30,9 +30,14 @@ header, main, footer
   width: 96vw;
 }
 
-section article, header, aside, footer
+header, section, section.vignettes a, footer
 {
   background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%);
+}
+
+section.vignettes
+{
+  background: rgb(0, 0, 0, 0);
 }
 
 header h1, header h2
@@ -62,7 +67,7 @@ body
   font-weight: 400;       
   color: black;
   font-family: 'Varela Round', sans-serif;      
-  background: linear-gradient(180deg, rgb(48, 45, 53) 0%, rgb(117, 83, 113) 50%, rgb(189, 150, 187) 90%);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(46, 43, 46) 50%, rgb(58, 54, 58) 90%);
   opacity: 1 ;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -84,7 +89,7 @@ header
 {
   display: flex;
   justify-content: space-around;
-  background: #333;
+  /* background: #333; */
   margin: 0;
   padding: 0;
   width: 96vw;
@@ -135,10 +140,11 @@ section
     margin-bottom: 5%;
 }
 
-section article
+section.vignettes a
 {
+  display: block;
   color:black;
-  background: #333;
+  /* background: #333; */
   /* background: linear-gradient(180deg, rgb(3, 20, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%); */
   border: black solid 0.1rem;
   border-radius: 10rem ;
@@ -160,16 +166,37 @@ section.search ul, section.search div
 
 section.search
 {
-  margin: 0;
-  height: 20%;
+  margin: 0 auto;
+  margin-top:5rem;
+  width: 80%;
+  padding: 3rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
 }
 
-section.recentSearch
+section.search button
 {
+  margin-top: 50;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  height: 10%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+/* ul.recentSearch li
+{
+  display:none;
   margin: 0;
+  margin-top: 2rem;
   padding: 0;
   text-align: center;      
-}
+} */
 
 section.recentSearch button
 {
@@ -187,6 +214,7 @@ section.recentSearch ul
 
 section.vignettes
     {
+      /* grid-column: span 1; */
       height: 50%;
       display: flex;
       flex-direction: column;
@@ -226,37 +254,6 @@ a:hover
 /* +++++++++++++++++++++++++++++++++++++++++ * MAIN_FIN * +++++++++++++++++++++++++++++++++++++++++++++++ */
 /*                                         &&&&&&&&&&&&&&&                                                */
 /*                                         &&&&&&&&&&&&&&&                                                */
-/* +++++++++++++++++++++++++++++++++++++++++++++ * ASIDE * ++++++++++++++++++++++++++++++++++++++++++++++ */
-
-/* ====== STYLE GENERAL ====== */
-aside
-{
-  display: none;
-  grid-column: span 2;
-  background: #333;
-  padding: 20rem;
-  opacity: 0.6 ;
-  background: rgb(94,11,187);
-  /* background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%); */
-  border: black solid 1rem;
-  border-radius: 20rem ;
-  -webkit-border-radius: 20rem ;
-  -moz-border-radius: 20rem ;
-  -ms-border-radius: 20rem ;
-  -o-border-radius: 20rem ;
-  box-shadow: 2rem 2rem 0rem rgb(36, 34, 34);
-  font-size: 25rem;
-  font-family: 'Varela Round', sans-serif;
-  filter: drop-shadow(5rem 5rem 2rem #4444dd);
-  -webkit-filter: drop-shadow(5rem 5rem 1rem #050505); 
-}
-/* ====== STYLE des CLASSES ====== */
-/* ====== STYLE des ID ====== */
-/* ====== STYLE ANNEXES ====== */
-
-/* +++++++++++++++++++++++++++++++++++++++++++++ * ASIDE_FIN * ++++++++++++++++++++++++++++++++++++++++++ */ 
-/*                                         &&&&&&&&&&&&&&&                                                */
-/*                                         &&&&&&&&&&&&&&&                                                */
 /* +++++++++++++++++++++++++++++++++++++++++++++ * FOOTER * +++++++++++++++++++++++++++++++++++++++++++++ */
 
 /*STYLE GENERAL */
@@ -267,7 +264,7 @@ footer
   width: 96vw;
   height: 10vh;
   grid-column: 1 / -1;
-  background: #333;
+  /* background: #333; */
   opacity: 1;
   /* background: rgb(94,11,187); */
   /* background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%); */
@@ -283,18 +280,18 @@ footer
   filter: drop-shadow(0.5rem 0.5rem 0.2rem #000000);
   -webkit-filter: drop-shadow(0.5rem 0.5rem 0.2rem #000000);
 }
- /* ________________________________________élements de MAIN____________________________________________ */
-footer img
+ /* ________________________________________élements de FOOTER____________________________________________ */
+/* footer img
     {
       height: 50%;
       margin-left: 45%;
       margin-top: 3%;
-    }
+    } */
 /* ====== STYLE des CLASSES ====== */
 /* ====== STYLE des ID ====== */
 /* ====== STYLE ANNEXES ====== */
 
-+/* +++++++++++++++++++++++++++++++++++++++++++++ * FOOTER_FIN * +++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++ * FOOTER_FIN * +++++++++++++++++++++++++++++++++++++++++ */
 /*                                         &&&&&&&&&&&&&&&                                                */
 /*                                         &&&&&&&&&&&&&&&                                                */
 
