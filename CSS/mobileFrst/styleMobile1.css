@@ -1,160 +1,155 @@
 
 /* ====== NOTES ====== */
 
-/* 1 . recalibrer les tailles des polices
-2 .    */
-
 /* ====== REMARQUES ====== */
+
 /* ====== @IMPORTS ====== */
+
  @import url('https://fonts.googleapis.com/css2? family = Varela + Round & display = swap');
-/*                                         &&&&&&&&&&&&&&&                                                */
-/*                                         &&&&&&&&&&&&&&&                                                */
-/* +++++++++++++++++++++++++++++++++++++++++++++ * HTML * +++++++++++++++++++++++++++++++++++++++++++++++ */
 
 /*====== PARAMETRAGE GLOBAL ====== */
 *
 {
-    margin: 0;
-    padding: 0;
     box-sizing: inherit;
 }
 
 html {
     font-size: 62.5%;
 }
-/* ====== STYLES GROUPES ELEMENTS MAJEURS ====== */
+
+/* ====== STYLE GENERAL ====== */
+
+header, footer
+{ 
+  box-shadow: 0.2rem 0.2rem 0rem rgb(36, 34, 34);
+  font-size: 1rem;
+  font-family: 'Varela Round', sans-serif;
+  filter: drop-shadow(0.5rem 0.5rem 0.2rem #000000);
+  -webkit-filter: drop-shadow(0.5rem 0.5rem 0.2rem #4444dd);
+  background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%);
+}
+
 header, main, footer
 {
   margin: 0;
   padding: 0;
-  width: 96vw;
-}
-
-header, section, section.vignettes a, footer
-{
-  background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%);
-}
-
-section.vignettes
-{
-  background: rgb(0, 0, 0, 0);
+  opacity: 1;   
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
 }
 
 header h1, header h2
 {
   margin: 0;
   padding-top: 2%;
-  height: 90%;
-  width: 40%;
+  height: 20rem;
+  width: 30rem;
 }
 
-/* body, header, main, footer
+body, header, main, footer
 {
-  border:0.3rem solid black;
-} */
+  /* border:0.3rem solid rgb(250, 4, 4); */
+}
 
-/* +++++++++++++++++++++++++++++++++++++++++++++ * FIN HTML * +++++++++++++++++++++++++++++++++++++++++++ */
-/*                                         &&&&&&&&&&&&&&&                                                */
-/*                                         &&&&&&&&&&&&&&&                                                */
-/* +++++++++++++++++++++++++++++++++++++++++++++ * BODY * +++++++++++++++++++++++++++++++++++++++++++++++ */
-
-/* ====== STYLE GENERAL ====== */
+/* +++++++++++++++++++++++++++++++++++++++++++++ * conteneur BODY * +++++++++++++++++++++++++++++++++++++++++++++++ */
 body
 {
   margin: 0;
   padding: 0;
+  height: 100%;
   box-sizing: border-box;
   font-weight: 400;       
   color: black;
   font-family: 'Varela Round', sans-serif;      
-  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(46, 43, 46) 50%, rgb(58, 54, 58) 90%);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(46, 43, 46) 50%, rgb(119, 116, 119) 90%);
   opacity: 1 ;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(4, auto);
-  grid-template-columns: 10rem 50% auto;
-  grid-gap: 0.2rem;
 }
-/* ====== STYLE des CLASSES ====== */
-/* ====== STYLE des ID ====== */
-/* ====== STYLE ANNEXES ====== */
-
-/* +++++++++++++++++++++++++++++++++++++++++++++ * BODY_FIN * +++++++++++++++++++++++++++++++++++++++++++ */
-/*                                         &&&&&&&&&&&&&&&                                                */
-/*                                         &&&&&&&&&&&&&&&                                                */
-/* +++++++++++++++++++++++++++++++++++++++++++++ * HEADER * +++++++++++++++++++++++++++++++++++++++++++++ */
-
-/* ====== STYLE GENERAL ====== */
+/* +++++++++++++++++++++++++++++++++++++++++++++ * conteneur HEADER * +++++++++++++++++++++++++++++++++++++++++++++ */
 header
 {
   display: flex;
   justify-content: space-around;
-  /* background: #333; */
-  margin: 0;
-  padding: 0;
-  width: 96vw;
-  height: 15vh;
-  opacity: 1;
-  /* background: rgb(94,11,187); */
-  /* background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%); */
-  border: black solid 0.1rem;
+  height: 10vh;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++ * conteneur MAIN * +++++++++++++++++++++++++++++++++++++++++++++++ */
+main
+{
+  height: 80%;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++ * conteneur FOOTER * +++++++++++++++++++++++++++++++++++++++++++++ */
+footer
+{ 
+   height: 10vh;
+}
+
+ /* ________________________________________élements de MAIN____________________________________________ */
+
+ h3
+{
+  /* border: rgb(255, 255, 255) 0.5rem solid; */
+  text-align: center;
+  height: 5%;  
+}
+
+h3 a
+{
+  color: white;
+  font-size: large;
+}
+
+a:link a:visited
+    {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-variant: small-caps;
+    }
+
+a:hover
+{
+  color: red;
+  font-weight: bold;
+}
+
+ section
+{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-shadow: 0.2rem 0.2rem 0rem rgb(36, 34, 34);
+    font-size: 1rem;
+    font-family: 'Varela Round', sans-serif;
+    filter: drop-shadow(0.5rem 0.5rem 0.2rem #000000);
+    -webkit-filter: drop-shadow(0.5rem 0.5rem 0.2rem #4444dd);
+    background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%);   
+}
+
+li
+{
+  list-style-type: none;
+}
+
+footer li a
+{
+  color: white;
+}
+
+/* ====== STYLE des CLASSES ====== */
+
+section.search
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 40%;
+  padding: 3rem;
   border-radius: 2rem;
   -webkit-border-radius: 2rem;
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
-  box-shadow: 0.2rem 0.2rem 0rem rgb(36, 34, 34);
-  font-size: 1rem;
-  font-family: 'Varela Round', sans-serif;
-  filter: drop-shadow(0.5rem 0.5rem 0.2rem #000000);
-  -webkit-filter: drop-shadow(0.5rem 0.5rem 0.2rem #4444dd);
-}
-/* ====== STYLE des CLASSES ====== */
-/* ====== STYLE des ID ====== */
-/* ====== STYLE ANNEXES ====== */
-
-/* +++++++++++++++++++++++++++++++++++++++++++++ * HEADER_FIN * +++++++++++++++++++++++++++++++++++++++++ */
-/*                                         &&&&&&&&&&&&&&&                                                */
-/*                                         &&&&&&&&&&&&&&&                                                */
-/* +++++++++++++++++++++++++++++++++++++++++++++ * MAIN * +++++++++++++++++++++++++++++++++++++++++++++++ */
-
-/* ====== STYLE GENERAL ====== */
-main
-{
-  margin: 0;
-  padding: 0;
-  height: 70vh;
-  grid-column: span 4;
-  opacity: 1 ;
-}
- /* ________________________________________élements de MAIN____________________________________________ */
-h3
-{
-  margin-left: 10%;
-  text-align: center;
-}
-
-section
-{
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-section.vignettes a
-{
-  display: block;
-  color:black;
-  /* background: #333; */
-  /* background: linear-gradient(180deg, rgb(3, 20, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%); */
-  border: black solid 0.1rem;
-  border-radius: 10rem ;
-  -webkit-border-radius: 10rem ;
-  -moz-border-radius: 10rem ;
-  -ms-border-radius: 10rem ;
-  -o-border-radius: 10rem ;
-  box-shadow: 0.2rem 0.2rem 0rem rgb(36, 34, 34);
-  font-size: 2.5rem;
-  font-family: 'Varela Round', sans-serif;
+  /* border: rgb(3, 3, 3) 0.5rem solid; */
 }
 
 section.search ul, section.search div
@@ -164,138 +159,120 @@ section.search ul, section.search div
   justify-content: space-evenly;
 }
 
-section.search
-{
-  margin: 0 auto;
-  margin-top:5rem;
-  width: 80%;
-  padding: 3rem;
-  border-radius: 2rem;
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
-}
-
-section.search button
-{
-  margin-top: 50;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  height: 10%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-}
-
-/* ul.recentSearch li
-{
-  display:none;
-  margin: 0;
-  margin-top: 2rem;
-  padding: 0;
-  text-align: center;      
-} */
-
-section.recentSearch button
-{
-  border-radius: 2rem;
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
-}
-
-section.recentSearch ul
-{
-  display: none;
-}
-
-section.vignettes
-    {
-      /* grid-column: span 1; */
-      height: 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-a:link, a:visited
-    {
-      color: black;
-      text-decoration: none;
-      font-variant: small-caps;
-    }
-
-a:hover
-{
-  font-weight: bold;
-}
-/* ====== STYLE des CLASSES ====== */
 .myInputs input
 {
+  width: 40%;
    border-radius: 2rem;
    -webkit-border-radius: 2rem;
    -moz-border-radius: 2rem;
    -ms-border-radius: 2rem;
    -o-border-radius: 2rem;
 }
-
+/* style des placeholder */
 .myInputs input::placeholder
-{
+{  
   color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  font-weight: bold;
   font-variant: small-caps;
   opacity: 1;
+  text-align: center;
 }
-/* ====== STYLE des ID ====== */
-/* ====== STYLE ANNEXES ====== */
 
-/* +++++++++++++++++++++++++++++++++++++++++ * MAIN_FIN * +++++++++++++++++++++++++++++++++++++++++++++++ */
-/*                                         &&&&&&&&&&&&&&&                                                */
-/*                                         &&&&&&&&&&&&&&&                                                */
-/* +++++++++++++++++++++++++++++++++++++++++++++ * FOOTER * +++++++++++++++++++++++++++++++++++++++++++++ */
+ul.icones i
+{
+   font-size: 160%;
+  margin: 2rem;
+  color: black;
+}
 
-/*STYLE GENERAL */
-footer
-{ 
+section.search button
+{
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-variant: small-caps;
+  margin-top: 50;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  height: 5rem;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+section.vignettes
+{   
+  height:60%; 
+  background: rgb(0, 0, 0, 0);
+  /* border: rgb(3, 3, 3) 0.5rem solid;   */
+}
+
+section.vignettes ul
+{
   margin: 0;
   padding: 0;
-  width: 96vw;
-  height: 10vh;
-  grid-column: 1 / -1;
-  /* background: #333; */
-  opacity: 1;
-  /* background: rgb(94,11,187); */
-  /* background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%); */
-  border: black solid 0.1rem;
-  border-radius: 2rem ;
-  -webkit-border-radius: 2rem ;
-  -moz-border-radius: 2rem ;
-  -ms-border-radius: 2rem ;
-  -o-border-radius: 2rem ;
-  box-shadow: 0.2rem 0.2rem 0rem rgb(36, 34, 34);
-  font-size: 1rem;
-  font-family: 'Varela Round', sans-serif;
-  filter: drop-shadow(0.5rem 0.5rem 0.2rem #000000);
-  -webkit-filter: drop-shadow(0.5rem 0.5rem 0.2rem #000000);
+  width: 80%;
+  height: 80%;  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
 }
- /* ________________________________________élements de FOOTER____________________________________________ */
-/* footer img
-    {
-      height: 50%;
-      margin-left: 45%;
-      margin-top: 3%;
-    } */
-/* ====== STYLE des CLASSES ====== */
-/* ====== STYLE des ID ====== */
-/* ====== STYLE ANNEXES ====== */
 
-/* +++++++++++++++++++++++++++++++++++++++++++++ * FOOTER_FIN * +++++++++++++++++++++++++++++++++++++++++ */
-/*                                         &&&&&&&&&&&&&&&                                                */
-/*                                         &&&&&&&&&&&&&&&                                                */
+section.vignettes ul li
+{
+  margin-left: 25%;
+  margin-top: 2rem;
+  max-width: 50%;
+  max-height: 25%;
+  color:black;
+  border: black solid 0.1rem;
+  border-radius: 10rem ;
+  -webkit-border-radius: 10rem ;
+  -moz-border-radius: 10rem ;
+  -ms-border-radius: 10rem ;
+  -o-border-radius: 10rem ;
+  box-shadow: 0.2rem 0.2rem 0rem rgb(36, 34, 34);
+  font-size: 2.5rem;
+  font-family: 'Varela Round', sans-serif;
+  background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%);
+}
 
-/* ====== @MEDIA QUERIES ====== */
+section.vignettes img
+{
+  max-width: 100%;
+	height: auto;
+  border-radius: 10rem ;
+  -webkit-border-radius: 10rem ;
+  -moz-border-radius: 10rem ;
+  -ms-border-radius: 10rem ;
+  -o-border-radius: 10rem ;
+}
+
+/* ________________________________________élements de FOOTER____________________________________________ */
+
+footer ul
+{
+padding: 0;
+display: flex;
+justify-content: space-around;
+}
+
+footer ul li
+{
+  padding-top: 2.5rem;
+  align-items: center;
+}
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++ * @MEDIA QUERIES * +++++++++++++++++++++++++++++++++++++++++ */
+
 @media screen and (min-width:780rem){
 
   section
@@ -315,5 +292,25 @@ footer
   
 }
 
+/* ====== AUTRES ====== */
 
-/* 123456789_1234567890_1234567890_1234567890_1234567890_123 */
+/* ul.recentSearch li
+{
+  display:none;
+  margin: 0;
+  margin-top: 2rem;
+  padding: 0;
+  text-align: center;      
+} */
+
+/* section.recentSearch ul
+{
+  display: none;
+} */
+
+/* footer img
+    {
+      height: 50%;
+      margin-left: 45%;
+      margin-top: 3%;
+    } */
