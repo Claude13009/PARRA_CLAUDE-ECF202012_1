@@ -52,7 +52,7 @@ body, header, main, footer
 }
 
 /*                                          ---- * conteneur BODY * ----                                   */
-  body
+body
 {
   margin: 0;
   padding: 0;
@@ -65,7 +65,7 @@ body, header, main, footer
   opacity: 1 ;
 }
 /*                                          ---- * conteneur HEADER * ----                                 */
-  header
+header
 {
   display: flex;
   justify-content: space-around;
@@ -74,7 +74,7 @@ body, header, main, footer
 /*                                          ---- * conteneur MAIN * ----                                   */
 
 /* ====== STYLE des GENERAL ====== */
-  main
+main
 {
   height: 80%;
 }
@@ -201,18 +201,18 @@ section.vignettes ul
   
 }
 section.vignettes ul li
-{ 
+{
   margin-left: 10%;
   margin-bottom: 2.5%;
-  width: 80%;
-  height: 25%;
+  width: 50rem;
+  height: 40rem;
   padding: 2.5%;
   border: black solid 0.1rem;
-  border-radius: 10rem ;
-  -webkit-border-radius: 10rem ;
-  -moz-border-radius: 10rem ;
-  -ms-border-radius: 10rem ;
-  -o-border-radius: 10rem ;
+  border-radius: 1rem ;
+  -webkit-border-radius: 1rem ;
+  -moz-border-radius: 1rem ;
+  -ms-border-radius: 1rem ;
+  -o-border-radius: 1rem ;
   box-shadow: 0.2rem 0.2rem 0rem rgb(36, 34, 34);
   background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%);
 }
@@ -220,12 +220,12 @@ section.vignettes ul li img
 {
   width: 100%;
   height:100%;
-  border-radius: 10rem ;
-  -webkit-border-radius: 10rem ;
-  -moz-border-radius: 10rem ;
-  -ms-border-radius: 10rem ;
-  -o-border-radius: 10rem ;
-  box-shadow: 0.3rem 0.3rem 0.8rem rgb(36, 34, 34);  
+  border-radius: 1rem ;
+  -webkit-border-radius: 1rem ;
+  -moz-border-radius: 1rem ;
+  -ms-border-radius: 1rem ;
+  -o-border-radius: 1rem ;
+  box-shadow: 0.3rem 0.3rem 0.8rem rgb(36, 34, 34);
 }
 /*                                          ---- * conteneur FOOTER * ----                                   */
 /* ====== STYLE des GENERAL ====== */
@@ -259,164 +259,122 @@ footer ul li
   
 
  /*                                          ---- * paramètres GENERAUX * ----                                   */
-  body
-  {
-    width: 100vw;
-    /* border: 2px solid blue; */
-  }
-  header, footer
-  {
-    width: 98vw;
-    height: 15vh;
-  }
+body
+{
+  width: 100vw;
+  /* border: 2px solid blue; */
+}
+header, footer
+{
+  width: 98.5vw;
+  height: 15vh;
+}
    /*                                        ---- * conteneur HEADER * ----                                   */
-  header
-  {
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-  }
-  header h1
-  {
-    margin: 0;
-    padding: 0;
-    width: 45vw;
-    height: 14vh;
-    font-size: 8rem;
-    /* border: 2px solid rgb(0, 0, 0); */
-  }
-  header h2
-  {
+header
+{
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+header h1
+{
+  margin: 0;
+  padding: 0;
+  width: 45vw;
+  height: 14vh;
+  font-size: 8rem;
+  /* border: 2px solid rgb(0, 0, 0); */
+}
+header h2
+{
 
-    width: 45vw;
-    height: 14vh;
-    font-size: 4rem;
-    /* border: 2px solid rgb(0, 0, 0); */
-  }
+  width: 45vw;
+  height: 14vh;
+  font-size: 4rem;
+  /* border: 2px solid rgb(0, 0, 0); */
+}
 
   /*                                          ---- * conteneur MAIN * ----                                   */
-  main
-  {
-        border: 2px solid rgb(0, 0, 0);
-
-  }
-  section.vignettes
-  { 
-    border: 2px solid rgb(0, 0, 0);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  section.vignettes ul
-  { margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 80%;
-    border: 2px solid rgb(255, 0, 0);    
-  }
-  
-  section.vignettes ul li
+main
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 2px solid rgb(0, 0, 0); */
+}
+section.vignettes
 { 
-  margin-left: 10%;
+   /* border: 2px solid rgb(0, 0, 0);    */
+}
+section.vignettes ul
+{ 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-right: 10%;
+  width: 100%;
+  height: 80%;
+  /* border: 2px solid rgb(255, 0, 0);     */
+}
+  
+section.vignettes ul li
+{
+  margin-top: 2.5%;
   margin-bottom: 2.5%;
-  width: 40%;
-  height: 12.5%;
+  width: 30rem;
+  height: 25rem;
   padding: 2.5%;
   border: black solid 0.1rem;
-  border-radius: 10rem ;
-  -webkit-border-radius: 10rem ;
-  -moz-border-radius: 10rem ;
-  -ms-border-radius: 10rem ;
-  -o-border-radius: 10rem ;
+  border-radius: 1rem ;
+  -webkit-border-radius: 1rem ;
+  -moz-border-radius: 1rem ;
+  -ms-border-radius: 1rem ;
+  -o-border-radius: 1rem ;
   box-shadow: 0.2rem 0.2rem 0rem rgb(36, 34, 34);
   background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%);
-  border: 2px solid rgb(248, 1, 1);
+  /* border: 2px solid rgb(248, 1, 1); */
 }
-  section.vignettes ul li img
+section.vignettes ul li img
 {
   width: 100%;
   height:100%;
-  border-radius: 10rem ;
-  -webkit-border-radius: 10rem ;
-  -moz-border-radius: 10rem ;
-  -ms-border-radius: 10rem ;
-  -o-border-radius: 10rem ;
+  border-radius: 1rem ;
+  -webkit-border-radius: 1rem ;
+  -moz-border-radius: 1rem ;
+  -ms-border-radius: 1rem ;
+  -o-border-radius: 1rem ;
   box-shadow: 0.3rem 0.3rem 0.8rem rgb(36, 34, 34);
-  border: 2px solid rgb(255, 0, 0);
-}
-
-/*                                  =================================================                        */
-  section.search
-{
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  height: 40%;
-  padding: 3rem;
-  border-radius: 2rem;
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
-  filter: drop-shadow(0.5rem 0.5rem 0.2rem #000000);
-  -webkit-filter: drop-shadow(0.5rem 0.5rem 0.2rem #4444dd);
-  background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%); 
-  /* border: rgb(3, 3, 3) 0.5rem solid; */
-}
-section.search ul, section.search div
-{
-  padding: 0;
-  display: flex;
-  justify-content: space-evenly;
-}
-.myInputs input
-{
-  width: 40%;
-   border-radius: 2rem;
-   -webkit-border-radius: 2rem;
-   -moz-border-radius: 2rem;
-   -ms-border-radius: 2rem;
-   -o-border-radius: 2rem;
-}
-/* style des placeholder */
-.myInputs input::placeholder
-{  
-  color: rgb(0, 0, 0);
-  font-size: 1.2rem;
-  font-weight: bold;
-  font-variant: small-caps;
-  opacity: 1;
-  text-align: center;
+  /* border: 2px solid rgb(255, 0, 0); */
 }
 ul.icones i
 {
-   font-size: 160%;
+  font-size: 300%;
   margin: 2rem;
   color: black;
 }
-section.search button
-{
-  font-size: 1.2rem;
-  font-weight: bold;
-  font-variant: small-caps;
-  margin-top: 50;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  height: 5rem;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  border-radius: 2rem;
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
-}
+
   /*                                          ---- * conteneur FOOTER * ----                                   */
-  footer
-  { 
-    height: 15vh;
-  }
+footer
+{ 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+}
+footer ul
+{
+width: 80%;
+padding: 0;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+footer ul li
+{
+padding-top: 2.5rem;
+} 
   
 }
