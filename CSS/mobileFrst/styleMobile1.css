@@ -4,7 +4,7 @@
 /* ====== REMARQUES ====== */
 
 /* ====== @IMPORTS ====== */
- @import url('https://fonts.googleapis.com/css2? family = Varela + Round & display = swap');
+@import url('https://fonts.googleapis.com/css2? family = Varela + Round & display = swap');
 
 
 
@@ -68,8 +68,24 @@ body
 header
 {
   display: flex;
+  text-align: center;
   justify-content: space-around;
   height: 10vh;
+}
+header h1
+{
+  width: 22vw;
+  height: 14vh;
+  font-size: 2rem;
+  /* border: 2px solid rgb(0, 0, 0); */
+}
+header h2
+{
+
+  width: 45vw;
+  height: 14vh;
+  font-size: 2rem;
+  /* border: 2px solid rgb(0, 0, 0); */
 }
 /*                                          ---- * conteneur MAIN * ----                                   */
 
@@ -246,15 +262,7 @@ footer ul li
 }
 
 /*                                          ---- * @Media QUERIES * ----                                   */
-@media screen and (min-width:780px){
 
-  section
-  {
-    width: 70vw;
-    margin: 0;
-    padding: 0;
-  }
-}
 @media screen and (min-width:1200px){
   
 
@@ -266,10 +274,10 @@ body
 }
 header, footer
 {
-  width: 98.5vw;
+  width: 98vw;
   height: 15vh;
 }
-   /*                                        ---- * conteneur HEADER * ----                                   */
+/*                                        ---- * conteneur HEADER * ----                                   */
 header
 {
   display: flex;
@@ -294,7 +302,7 @@ header h2
   /* border: 2px solid rgb(0, 0, 0); */
 }
 
-  /*                                          ---- * conteneur MAIN * ----                                   */
+/*                                          ---- * conteneur MAIN * ----                                   */
 main
 {
   display: flex;
@@ -319,7 +327,6 @@ section.vignettes ul
   height: 80%;
   /* border: 2px solid rgb(255, 0, 0);     */
 }
-  
 section.vignettes ul li
 {
   margin-top: 2.5%;
@@ -356,7 +363,7 @@ ul.icones i
   color: black;
 }
 
-  /*                                          ---- * conteneur FOOTER * ----                                   */
+/*                                          ---- * conteneur FOOTER * ----                                   */
 footer
 { 
   display: flex;
@@ -375,6 +382,5 @@ justify-content: space-around;
 footer ul li
 {
 padding-top: 2.5rem;
-} 
-  
+}  
 }
