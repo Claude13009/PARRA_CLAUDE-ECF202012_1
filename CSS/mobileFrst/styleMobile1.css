@@ -274,12 +274,12 @@ footer ul li
 /* +++++++++++++++++++++++++++++++++++++++++++++ * @MEDIA QUERIES * +++++++++++++++++++++++++++++++++++++++++ */
 
 
-@media screen and (min-width:400rem){
+@media screen and (min-width:400px){
 
   
 }
 
-@media screen and (min-width:780rem){
+@media screen and (min-width:780px){
 
   section
   {
@@ -289,22 +289,47 @@ footer ul li
   }
 }
 
-@media screen and (min-width:1200rem){
+
+@media screen and (min-width:1200px){
   
-/* +++++++++++++++++++++++++++++++++++++++++++++ * conteneur HEADER * +++++++++++++++++++++++++++++++++++++++++++++ */
-header
-{
-  display: flex;
-  justify-content: space-around;
-  height: 10vh;
-}
 
+  /* +++++++++++++++++++++++++++++++++++++++++++++ * conteneur BODY * +++++++++++++++++++++++++++++++++++++++++++++ */
+  body
+  {
+    width: 100vw;
+    border: 2px solid blue;
+  }
 
-/* +++++++++++++++++++++++++++++++++++++++++++++ * conteneur FOOTER * +++++++++++++++++++++++++++++++++++++++++++++ */
-footer
-{ 
-   height: 15vh;
-}
+  /* ====== STYLE GENERAL ====== */
+
+  header, main, footer
+  {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-right: 2px solid rgb(255, 255, 255);
+    border-left:  2px solid rgb(255, 255, 255) ;
+  }
+
+  /* +++++++++++++++++++++++++++++++++++++++++++++ * conteneur HEADER * +++++++++++++++++++++++++++++++++++++++++++++ */
+  header
+  {
+    display: flex;
+    justify-content: space-around;
+    height: 10%;
+  }
+
+  /* +++++++++++++++++++++++++++++++++++++++++++++ * conteneur HEADER * +++++++++++++++++++++++++++++++++++++++++++++ */
+  main
+  {
+    display: block;
+  }
+
+  /* +++++++++++++++++++++++++++++++++++++++++++++ * conteneur FOOTER * +++++++++++++++++++++++++++++++++++++++++++++ */
+  footer
+  { 
+    height: 15%;
+  }
   
 }
 
