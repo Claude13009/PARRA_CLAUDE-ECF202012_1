@@ -4,22 +4,21 @@
 /* ====== REMARQUES ====== */
 
 /* ====== @IMPORTS ====== */
-
  @import url('https://fonts.googleapis.com/css2? family = Varela + Round & display = swap');
 
+
+
+/*                                          ---- * STYLE GENERAL DOM * ----                                   */
 /*====== PARAMETRAGE GLOBAL ====== */
 *
 {
     box-sizing: inherit;
     
 }
-
-html {
+html
+{
     font-size: 62.5%;
 }
-
-/* ====== STYLE GENERAL ====== */
-
 header, footer
 { 
   box-shadow: 0.2rem 0.2rem 0rem rgb(36, 34, 34);
@@ -29,7 +28,6 @@ header, footer
   -webkit-filter: drop-shadow(0.5rem 0.5rem 0.2rem #4444dd);
   background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%);
 }
-
 header, main, footer
 {
   margin: 0;
@@ -41,7 +39,6 @@ header, main, footer
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
 }
-
 header h1, header h2
 {
   margin: 0;
@@ -49,14 +46,13 @@ header h1, header h2
   height: 20rem;
   width: 30rem;
 }
-
 body, header, main, footer
 {
   /* border:0.3rem solid rgb(250, 4, 4); */
 }
 
-/* +++++++++++++++++++++++++++++++++++++++++++++ * conteneur BODY * +++++++++++++++++++++++++++++++++++++++++++++++ */
-body
+/*                                          ---- * conteneur BODY * ----                                   */
+  body
 {
   margin: 0;
   padding: 0;
@@ -68,77 +64,60 @@ body
     background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(46, 43, 46) 50%, rgb(119, 116, 119) 90%);
   opacity: 1 ;
 }
-/* +++++++++++++++++++++++++++++++++++++++++++++ * conteneur HEADER * +++++++++++++++++++++++++++++++++++++++++++++ */
-header
+/*                                          ---- * conteneur HEADER * ----                                 */
+  header
 {
   display: flex;
   justify-content: space-around;
   height: 10vh;
 }
-/* +++++++++++++++++++++++++++++++++++++++++++++ * conteneur MAIN * +++++++++++++++++++++++++++++++++++++++++++++++ */
-main
+/*                                          ---- * conteneur MAIN * ----                                   */
+
+/* ====== STYLE des GENERAL ====== */
+  main
 {
   height: 80%;
 }
-/* +++++++++++++++++++++++++++++++++++++++++++++ * conteneur FOOTER * +++++++++++++++++++++++++++++++++++++++++++++ */
-footer
-{ 
-   height: 10vh;
-}
-
- /* ________________________________________élements de MAIN____________________________________________ */
-
- h3
+h3
 {
   /* border: rgb(255, 255, 255) 0.5rem solid; */
   text-align: center;
   height: 5%;  
 }
-
 h3 a
 {
   color: white;
   font-size: large;
 }
-
 a:link a:visited
-    {
-      color: rgb(0, 0, 0);
-      text-decoration: none;
-      font-variant: small-caps;
-    }
-
+{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-variant: small-caps;
+}
 a:hover
 {
   color: red;
   font-weight: bold;
 }
-
  section
 {
     margin-top: 5%;
     margin-bottom: 5%;
-    box-shadow: 0.2rem 0.2rem 0rem rgb(36, 34, 34);
     font-size: 1rem;
     font-family: 'Varela Round', sans-serif;
-    filter: drop-shadow(0.5rem 0.5rem 0.2rem #000000);
-    -webkit-filter: drop-shadow(0.5rem 0.5rem 0.2rem #4444dd);
-    background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%);   
+      
 }
-
 li
 {
   list-style-type: none;
 }
-
 footer li a
 {
   color: white;
 }
 
 /* ====== STYLE des CLASSES ====== */
-
-
 section.search
 {
   margin-left: auto;
@@ -151,16 +130,17 @@ section.search
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
+  filter: drop-shadow(0.5rem 0.5rem 0.2rem #000000);
+  -webkit-filter: drop-shadow(0.5rem 0.5rem 0.2rem #4444dd);
+  background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%); 
   /* border: rgb(3, 3, 3) 0.5rem solid; */
 }
-
 section.search ul, section.search div
 {
   padding: 0;
   display: flex;
   justify-content: space-evenly;
 }
-
 .myInputs input
 {
   width: 40%;
@@ -180,14 +160,12 @@ section.search ul, section.search div
   opacity: 1;
   text-align: center;
 }
-
 ul.icones i
 {
    font-size: 160%;
   margin: 2rem;
   color: black;
 }
-
 section.search button
 {
   font-size: 1.2rem;
@@ -207,13 +185,10 @@ section.search button
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
 }
-
 section.vignettes
 {   
-  height:60%; 
-  background: rgb(0, 0, 0, 0);
+  height:60%;
 }
-
 section.vignettes ul
 {
   margin: 0;
@@ -225,7 +200,6 @@ section.vignettes ul
   justify-content: space-around;
   
 }
-
 section.vignettes ul li
 { 
   margin-left: 10%;
@@ -242,7 +216,6 @@ section.vignettes ul li
   box-shadow: 0.2rem 0.2rem 0rem rgb(36, 34, 34);
   background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%);
 }
-
 section.vignettes ul li img
 {
   width: 100%;
@@ -254,31 +227,25 @@ section.vignettes ul li img
   -o-border-radius: 10rem ;
   box-shadow: 0.3rem 0.3rem 0.8rem rgb(36, 34, 34);  
 }
-
-/* ________________________________________élements de FOOTER____________________________________________ */
-
+/*                                          ---- * conteneur FOOTER * ----                                   */
+/* ====== STYLE des GENERAL ====== */
+footer
+{ 
+   height: 10vh;
+}
 footer ul
 {
 padding: 0;
 display: flex;
 justify-content: space-around;
 }
-
 footer ul li
 {
   padding-top: 2.5rem;
   align-items: center;
 }
 
-
-/* +++++++++++++++++++++++++++++++++++++++++++++ * @MEDIA QUERIES * +++++++++++++++++++++++++++++++++++++++++ */
-
-
-@media screen and (min-width:400px){
-
-  
-}
-
+/*                                          ---- * @Media QUERIES * ----                                   */
 @media screen and (min-width:780px){
 
   section
@@ -288,70 +255,168 @@ footer ul li
     padding: 0;
   }
 }
-
-
 @media screen and (min-width:1200px){
   
 
-  /* +++++++++++++++++++++++++++++++++++++++++++++ * conteneur BODY * +++++++++++++++++++++++++++++++++++++++++++++ */
+ /*                                          ---- * paramètres GENERAUX * ----                                   */
   body
   {
     width: 100vw;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
   }
-
-  /* ====== STYLE GENERAL ====== */
-
-  header, main, footer
+  header, footer
   {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    border-right: 2px solid rgb(255, 255, 255);
-    border-left:  2px solid rgb(255, 255, 255) ;
+    width: 98vw;
+    height: 15vh;
   }
-
-  /* +++++++++++++++++++++++++++++++++++++++++++++ * conteneur HEADER * +++++++++++++++++++++++++++++++++++++++++++++ */
+   /*                                        ---- * conteneur HEADER * ----                                   */
   header
   {
     display: flex;
+    text-align: center;
     justify-content: space-around;
-    height: 10%;
+  }
+  header h1
+  {
+    margin: 0;
+    padding: 0;
+    width: 45vw;
+    height: 14vh;
+    font-size: 8rem;
+    /* border: 2px solid rgb(0, 0, 0); */
+  }
+  header h2
+  {
+
+    width: 45vw;
+    height: 14vh;
+    font-size: 4rem;
+    /* border: 2px solid rgb(0, 0, 0); */
   }
 
-  /* +++++++++++++++++++++++++++++++++++++++++++++ * conteneur HEADER * +++++++++++++++++++++++++++++++++++++++++++++ */
+  /*                                          ---- * conteneur MAIN * ----                                   */
   main
   {
-    display: block;
-  }
+        border: 2px solid rgb(0, 0, 0);
 
-  /* +++++++++++++++++++++++++++++++++++++++++++++ * conteneur FOOTER * +++++++++++++++++++++++++++++++++++++++++++++ */
+  }
+  section.vignettes
+  { 
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  section.vignettes ul
+  { margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 80%;
+    border: 2px solid rgb(255, 0, 0);    
+  }
+  
+  section.vignettes ul li
+{ 
+  margin-left: 10%;
+  margin-bottom: 2.5%;
+  width: 40%;
+  height: 12.5%;
+  padding: 2.5%;
+  border: black solid 0.1rem;
+  border-radius: 10rem ;
+  -webkit-border-radius: 10rem ;
+  -moz-border-radius: 10rem ;
+  -ms-border-radius: 10rem ;
+  -o-border-radius: 10rem ;
+  box-shadow: 0.2rem 0.2rem 0rem rgb(36, 34, 34);
+  background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%);
+  border: 2px solid rgb(248, 1, 1);
+}
+  section.vignettes ul li img
+{
+  width: 100%;
+  height:100%;
+  border-radius: 10rem ;
+  -webkit-border-radius: 10rem ;
+  -moz-border-radius: 10rem ;
+  -ms-border-radius: 10rem ;
+  -o-border-radius: 10rem ;
+  box-shadow: 0.3rem 0.3rem 0.8rem rgb(36, 34, 34);
+  border: 2px solid rgb(255, 0, 0);
+}
+
+/*                                  =================================================                        */
+  section.search
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 40%;
+  padding: 3rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  filter: drop-shadow(0.5rem 0.5rem 0.2rem #000000);
+  -webkit-filter: drop-shadow(0.5rem 0.5rem 0.2rem #4444dd);
+  background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%); 
+  /* border: rgb(3, 3, 3) 0.5rem solid; */
+}
+section.search ul, section.search div
+{
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.myInputs input
+{
+  width: 40%;
+   border-radius: 2rem;
+   -webkit-border-radius: 2rem;
+   -moz-border-radius: 2rem;
+   -ms-border-radius: 2rem;
+   -o-border-radius: 2rem;
+}
+/* style des placeholder */
+.myInputs input::placeholder
+{  
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-variant: small-caps;
+  opacity: 1;
+  text-align: center;
+}
+ul.icones i
+{
+   font-size: 160%;
+  margin: 2rem;
+  color: black;
+}
+section.search button
+{
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-variant: small-caps;
+  margin-top: 50;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  height: 5rem;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+  /*                                          ---- * conteneur FOOTER * ----                                   */
   footer
   { 
-    height: 15%;
+    height: 15vh;
   }
   
 }
-
-/* ====== AUTRES ====== */
-
-/* ul.recentSearch li
-{
-  display:none;
-  margin: 0;
-  margin-top: 2rem;
-  padding: 0;
-  text-align: center;      
-} */
-
-/* section.recentSearch ul
-{
-  display: none;
-} */
-
-/* footer img
-    {
-      height: 50%;
-      margin-left: 45%;
-      margin-top: 3%;
-    } */
