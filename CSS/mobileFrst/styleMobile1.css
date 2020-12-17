@@ -7,8 +7,7 @@
 @import url('https://fonts.googleapis.com/css2? family = Varela + Round & display = swap');
 
 
-
-/*                                          ---- * STYLE GENERAL DOM * ----                                   */
+/*                                          ---- * STYLE GENERAL DOM * ----                                */
 /*====== PARAMETRAGE GLOBAL ====== */
 *
 {
@@ -46,14 +45,14 @@ header h1, header h2
   height: 20rem;
   width: 30rem;
 }
-body, header, main, footer
-{
-  /* border:0.3rem solid rgb(250, 4, 4); */
-}
+
 
 /*                                          ---- * conteneur BODY * ----                                   */
 body
 {
+  display: flex;
+  flex-direction: column ;
+  justify-content: space-evenly;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -61,7 +60,7 @@ body
   font-weight: 400;       
   color: black;
   font-family: 'Varela Round', sans-serif;      
-    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(46, 43, 46) 50%, rgb(119, 116, 119) 90%);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(46, 43, 46) 50%, rgb(119, 116, 119) 90%);
   opacity: 1 ;
 }
 /*                                          ---- * conteneur HEADER * ----                                 */
@@ -92,11 +91,12 @@ header h2
 /* ====== STYLE des GENERAL ====== */
 main
 {
+  display: flex;
+  flex-direction: column;  
   height: 80%;
 }
 h3
 {
-  /* border: rgb(255, 255, 255) 0.5rem solid; */
   text-align: center;
   height: 5%;  
 }
@@ -121,9 +121,9 @@ a:hover
     margin-top: 5%;
     margin-bottom: 5%;
     font-size: 1rem;
-    font-family: 'Varela Round', sans-serif;
-      
+    font-family: 'Varela Round', sans-serif;      
 }
+/* pour faire disparaitre les puces des listes */
 li
 {
   list-style-type: none;
@@ -132,7 +132,6 @@ footer li a
 {
   color: white;
 }
-
 /* ====== STYLE des CLASSES ====== */
 section.search
 {
@@ -149,7 +148,6 @@ section.search
   filter: drop-shadow(0.5rem 0.5rem 0.2rem #000000);
   -webkit-filter: drop-shadow(0.5rem 0.5rem 0.2rem #4444dd);
   background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%); 
-  /* border: rgb(3, 3, 3) 0.5rem solid; */
 }
 section.search ul, section.search div
 {
@@ -213,15 +211,14 @@ section.vignettes ul
   height: 80%;  
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  
+  justify-content: space-around;  
 }
 section.vignettes ul li
 {
-  margin-left: 10%;
+  margin-left: 17%;
   margin-bottom: 2.5%;
-  width: 50rem;
-  height: 40rem;
+  width: 40rem;
+  height: 30rem;
   padding: 2.5%;
   border: black solid 0.1rem;
   border-radius: 1rem ;
@@ -234,8 +231,8 @@ section.vignettes ul li
 }
 section.vignettes ul li img
 {
-  width: 100%;
-  height:100%;
+  width: 98%;
+  height:98%;
   border-radius: 1rem ;
   -webkit-border-radius: 1rem ;
   -moz-border-radius: 1rem ;
@@ -243,7 +240,90 @@ section.vignettes ul li img
   -o-border-radius: 1rem ;
   box-shadow: 0.3rem 0.3rem 0.8rem rgb(36, 34, 34);
 }
-/*                                          ---- * conteneur FOOTER * ----                                   */
+/*------------------------> MAIN Page 2 */
+/* ====== STYLE des CLASSES ====== */
+section.biographies
+{
+  height:60%;
+}
+section.biographies article.imagesBiographies
+{
+  display: grid;
+  grid-template-columns:300px 300px; /* 3 colonnes de largeur différente */
+  grid-template-rows:300px 300px; /* 2 rangées */
+  gap:12px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 80%;  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;  
+}
+section.biographies article.imagesBiographies div
+{
+  margin-left: 17%;
+  margin-bottom: 2.5%;
+  width: 20rem;
+  height: 15rem;
+  padding: 2.5%;
+  border: black solid 0.1rem;
+  border-radius: 1rem ;
+  -webkit-border-radius: 1rem ;
+  -moz-border-radius: 1rem ;
+  -ms-border-radius: 1rem ;
+  -o-border-radius: 1rem ;
+  box-shadow: 0.2rem 0.2rem 0rem rgb(36, 34, 34);
+  background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%);
+}
+section.biographies article.imagesBiographies div img
+{
+  width: 98%;
+  height:98%;
+  border-radius: 1rem ;
+  -webkit-border-radius: 1rem ;
+  -moz-border-radius: 1rem ;
+  -ms-border-radius: 1rem ;
+  -o-border-radius: 1rem ;
+  box-shadow: 0.3rem 0.3rem 0.8rem rgb(36, 34, 34);
+}
+
+
+/* ====== STYLE des ID ====== */
+h3#h3Page2
+{
+  font-size: 4rem;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: rgba(139, 80, 151, 0.575);
+  color: rgb(2, 2, 2);
+}
+article#deLienVideo
+{
+ width: 60%;
+ height: 60vh;
+}
+div.chedid
+{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+div.sanseverino
+{
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+div.morro
+{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+div.manuChao
+{
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+/*                                          ---- * conteneur FOOTER * ----                                 */
 /* ====== STYLE des GENERAL ====== */
 footer
 { 
@@ -266,73 +346,112 @@ footer ul li
 @media screen and (min-width:1200px){
   
 
- /*                                          ---- * paramètres GENERAUX * ----                                   */
-body
+ /*                                         ---- * paramètres GENERAUX * ----                              */
+  body
+  {
+    width: 100vw;
+  }
+  header, footer
+  {
+    width: 98vw;
+    height: 15vh;
+  }
+  /*                                        ---- * conteneur HEADER * ----                                 */
+  header
+  {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+  }
+  header h1
+  {
+    margin: 0;
+    padding: 0;
+    width: 45vw;
+    height: 14vh;
+    font-size: 8rem;
+  }
+  header h2
+  {
+    width: 45vw;
+    height: 14vh;
+    font-size: 4rem;
+  }
+
+  /*                                          ---- * conteneur MAIN * ----                                 */
+  main
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  section.vignettes ul
+  { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 10%;
+    width: 100%;
+    height: 80%;
+  }
+  section.vignettes ul li
+  {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    width: 30rem;
+    height: 25rem;
+    padding: 2.5%;
+    border: black solid 0.1rem;
+    border-radius: 1rem ;
+    -webkit-border-radius: 1rem ;
+    -moz-border-radius: 1rem ;
+    -ms-border-radius: 1rem ;
+    -o-border-radius: 1rem ;
+    box-shadow: 0.2rem 0.2rem 0rem rgb(36, 34, 34);
+    background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%);
+  }
+  section.vignettes ul li img
+  {
+    width: 100%;
+    height:100%;
+    border-radius: 1rem ;
+    -webkit-border-radius: 1rem ;
+    -moz-border-radius: 1rem ;
+    -ms-border-radius: 1rem ;
+    -o-border-radius: 1rem ;
+    box-shadow: 0.3rem 0.3rem 0.8rem rgb(36, 34, 34);
+  }
+  ul.icones i
+  {
+    font-size: 300%;
+    margin: 2rem;
+    color: black;
+  }
+  /*------------------------> MAIN Page 2 */
+
+  section.biographies
 {
-  width: 100vw;
-  /* border: 2px solid blue; */
+  height:60%;
 }
-header, footer
-{
-  width: 98vw;
-  height: 15vh;
-}
-/*                                        ---- * conteneur HEADER * ----                                   */
-header
-{
-  display: flex;
-  text-align: center;
-  justify-content: space-around;
-}
-header h1
+section.biographies article.imagesBiographies
 {
   margin: 0;
   padding: 0;
-  width: 45vw;
-  height: 14vh;
-  font-size: 8rem;
-  /* border: 2px solid rgb(0, 0, 0); */
-}
-header h2
-{
-
-  width: 45vw;
-  height: 14vh;
-  font-size: 4rem;
-  /* border: 2px solid rgb(0, 0, 0); */
-}
-
-/*                                          ---- * conteneur MAIN * ----                                   */
-main
-{
+  width: 100%;
+  height: 80%;  
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  /* border: 2px solid rgb(0, 0, 0); */
+  justify-content: space-around;  
 }
-section.vignettes
-{ 
-   /* border: 2px solid rgb(0, 0, 0);    */
-}
-section.vignettes ul
-{ 
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  padding-right: 10%;
-  width: 100%;
-  height: 80%;
-  /* border: 2px solid rgb(255, 0, 0);     */
-}
-section.vignettes ul li
+section.biographies article.imagesBiographies div
 {
-  margin-top: 2.5%;
+  margin-left: 17%;
   margin-bottom: 2.5%;
-  width: 30rem;
-  height: 25rem;
+  width: 40rem;
+  height: 30rem;
   padding: 2.5%;
   border: black solid 0.1rem;
   border-radius: 1rem ;
@@ -342,45 +461,202 @@ section.vignettes ul li
   -o-border-radius: 1rem ;
   box-shadow: 0.2rem 0.2rem 0rem rgb(36, 34, 34);
   background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%);
-  /* border: 2px solid rgb(248, 1, 1); */
 }
-section.vignettes ul li img
+section.biographies article.imagesBiographies div img
 {
-  width: 100%;
-  height:100%;
+  width: 98%;
+  height:98%;
   border-radius: 1rem ;
   -webkit-border-radius: 1rem ;
   -moz-border-radius: 1rem ;
   -ms-border-radius: 1rem ;
   -o-border-radius: 1rem ;
   box-shadow: 0.3rem 0.3rem 0.8rem rgb(36, 34, 34);
-  /* border: 2px solid rgb(255, 0, 0); */
 }
-ul.icones i
-{
-  font-size: 300%;
-  margin: 2rem;
-  color: black;
+  /* ====== STYLE des ID ====== */
+  h3#h3Page2
+  {
+    width: 30%;
+    height: 50px;
+    font-size: 4rem;
+    color: rgb(2, 2, 2);
+  }
+  /*                                          ---- * conteneur FOOTER * ----                               */
+  footer
+  { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+  }
+  footer ul
+  {
+  width: 80%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  }
+  footer ul li
+  {
+  padding-top: 2.5rem;
+  }  
 }
 
-/*                                          ---- * conteneur FOOTER * ----                                   */
+/* ================================================================================================================================== */
+                                                /* LES OUTILS FAIT MAISON */
+/* ================================================================================================================================== */
+
+/*                                        ---- * LES BORDERS 4 Parents > 4 Enfants * ----                                             */
+
+/* PAGE 1 */
+body
+{
+  border: 3px solid blue;
+}
+/* header
+{
+  border: 3px solid rgb(0, 255, 0);
+} */
+main
+{
+  border: 3px solid rgb(0, 255, 0);
+}
 footer
-{ 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 15vh;
-}
-footer ul
 {
-width: 80%;
-padding: 0;
-display: flex;
-align-items: center;
-justify-content: space-around;
+  border: 3px solid rgb(0, 255, 0);
 }
-footer ul li
+/* h1
 {
-padding-top: 2.5rem;
-}  
+  border: 3px solid rgb(255, 251, 0);
+} */
+/* h2
+{
+  border: 3px solid rgb(255, 251, 0);
+} */
+/* h3
+{
+  border: 3px solid rgb(255, 251, 0);
+} */
+section.search
+{
+  border: 3px solid rgb(255, 251, 0);
 }
+section.vignettes
+{
+  border: 3px solid rgb(255, 251, 0);
+}
+ul
+{
+  border: 3px solid rgb(255, 251, 0);
+}
+article
+{
+  border: 2px solid rgb(119, 0, 255);
+
+}
+article#deLienVideo
+{
+  border: 10px solid rgb(0, 225, 255);
+
+}
+div.myIputs
+{
+  border: 3px solid rgb(255, 30, 0);
+}
+ul.icones
+{
+  border: 3px solid rgb(255, 30, 0);
+}
+button
+{
+  border: 3px solid rgb(255, 30, 0);
+}
+li
+{
+  border: 3px solid rgb(255, 30, 0);
+}
+input
+{
+  border: 3px solid rgb(255, 0, 200);
+}
+ul
+{
+  border: 3px solid rgb(255, 0, 200);
+}
+li#vignettes
+{
+  border: 3px solid rgb(255, 0, 200);
+}
+
+/* PAGE 2 */
+section.biographies
+{
+  border: 3px solid rgb(255, 251, 0);
+}
+section.videos
+{
+  border: 3px solid rgb(255, 251, 0);
+}
+div
+{
+  border: 3px solid rgb(255, 30, 0);
+}
+aside
+{
+  border: 3px solid rgb(255, 30, 0);
+}
+iframe
+{
+  border: 3px solid rgb(255, 30, 0);
+}
+img
+{
+  border: 3px solid rgb(255, 0, 200);
+}
+h4
+{
+  border: 3px solid rgb(255, 0, 200);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* si vous êtes en train de lire cette phrase, c'est parce qu'il y a de la curiosité en vous */
+
+/* “Le remède à l'ennui, c'est la curiosité. La curiosité elle, est sans remède.” 
+De Anonyme  */
+
+/* “Le désir de connaître le pourquoi et le comment est appelé curiosité.”   
+De Thomas Hobbes / Léviathan  */
+
+/* “La curiosité est indispensable, elle diminue la peur de la Mort.”
+De Isabelle Chenebault  */
