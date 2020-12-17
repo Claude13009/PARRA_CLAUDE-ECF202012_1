@@ -205,6 +205,7 @@ section.vignettes
 }
 section.vignettes ul
 {
+  
   margin: 0;
   padding: 0;
   width: 100%;
@@ -248,24 +249,20 @@ section.biographies
 }
 section.biographies article.imagesBiographies
 {
+  margin: 0 auto;
   display: grid;
-  grid-template-columns:300px 300px; /* 3 colonnes de largeur différente */
-  grid-template-rows:300px 300px; /* 2 rangées */
-  gap:12px;
-  margin: 0;
+  align-items: center;
+  grid-template-columns:1fr 1fr; /* 3 colonnes de largeur différente */
+  grid-template-rows:1fr 1fr; /* 2 rangées */
+  gap:3rem;
   padding: 0;
-  width: 100%;
-  height: 80%;  
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;  
-}
+  width: 80%;
+  height: 80%;
+ }
 section.biographies article.imagesBiographies div
 {
-  margin-left: 17%;
-  margin-bottom: 2.5%;
-  width: 20rem;
-  height: 15rem;
+  width: 100%;
+  height: auto;
   padding: 2.5%;
   border: black solid 0.1rem;
   border-radius: 1rem ;
@@ -278,8 +275,8 @@ section.biographies article.imagesBiographies div
 }
 section.biographies article.imagesBiographies div img
 {
-  width: 98%;
-  height:98%;
+  width: 100%;
+  height:100%;
   border-radius: 1rem ;
   -webkit-border-radius: 1rem ;
   -moz-border-radius: 1rem ;
@@ -287,6 +284,101 @@ section.biographies article.imagesBiographies div img
   -o-border-radius: 1rem ;
   box-shadow: 0.3rem 0.3rem 0.8rem rgb(36, 34, 34);
 }
+section.videos
+{
+  /* border: solid 0.5rem black; */
+}
+section.videos article
+{
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 2.5%;  
+  /* border: solid 0.5rem rgb(1, 26, 252); */
+}
+section.videos article.youtube h2
+{
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.575);
+}
+section.videos article.youtube div
+{
+  margin: 0 auto;
+  align-items: center;
+  padding: 0;
+  width: 80%;
+  height: 80%;
+  border-radius: 1rem ;
+  -webkit-border-radius: 1rem ;
+  -moz-border-radius: 1rem ;
+  -ms-border-radius: 1rem ;
+  -o-border-radius: 1rem ;
+  box-shadow: 0.2rem 0.2rem 0rem rgb(36, 34, 34);
+  background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%);
+  border: solid 0.1rem rgb(0, 0, 0);
+}
+section.videos article.youtube div h4
+{
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.575);
+}
+section.videos article.youtube div img
+{
+  margin-top: 5%;
+  margin-left: 5%;
+  align-items: center;
+  padding: 0;
+  width: 90%;
+  height: 80%;
+  -webkit-border-radius: 1rem ;
+  -moz-border-radius: 1rem ;
+  -ms-border-radius: 1rem ;
+  -o-border-radius: 1rem ;
+  box-shadow: 0.2rem 0.2rem 0rem rgb(36, 34, 34);
+  border: solid 0.5rem rgb(255, 6, 6);
+}
+aside#bio
+{
+  margin: auto;
+  margin-top: 3rem;
+  width: 80vw;
+  padding: 1rem;
+  border-radius: 1rem ;
+  -webkit-border-radius: 1rem ;
+  -moz-border-radius: 1rem ;
+  -ms-border-radius: 1rem ;
+  -o-border-radius: 1rem ;
+  border: black solid 0.1rem;
+  box-shadow: 0.2rem 0.2rem 0rem rgb(36, 34, 34);
+  background: linear-gradient(180deg, rgb(0, 17, 255) 0%, rgb(132, 1, 255) 50%, rgb(255, 1, 149) 90%);
+}
+aside#bio p
+{
+  padding: 1rem;
+  background: white;
+  border-radius: 1rem ;
+  -webkit-border-radius: 1rem ;
+  -moz-border-radius: 1rem ;
+  -ms-border-radius: 1rem ;
+  -o-border-radius: 1rem ;
+}
+aside#bio h5
+{
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.575);
+}
+
 
 
 /* ====== STYLE des ID ====== */
@@ -502,124 +594,6 @@ section.biographies article.imagesBiographies div img
   padding-top: 2.5rem;
   }  
 }
-
-/* ================================================================================================================================== */
-                                                /* LES OUTILS FAIT MAISON */
-/* ================================================================================================================================== */
-
-/*                                        ---- * LES BORDERS 4 Parents > 4 Enfants * ----                                             */
-
-/* PAGE 1 */
-body
-{
-  border: 3px solid blue;
-}
-/* header
-{
-  border: 3px solid rgb(0, 255, 0);
-} */
-main
-{
-  border: 3px solid rgb(0, 255, 0);
-}
-footer
-{
-  border: 3px solid rgb(0, 255, 0);
-}
-/* h1
-{
-  border: 3px solid rgb(255, 251, 0);
-} */
-/* h2
-{
-  border: 3px solid rgb(255, 251, 0);
-} */
-/* h3
-{
-  border: 3px solid rgb(255, 251, 0);
-} */
-section.search
-{
-  border: 3px solid rgb(255, 251, 0);
-}
-section.vignettes
-{
-  border: 3px solid rgb(255, 251, 0);
-}
-ul
-{
-  border: 3px solid rgb(255, 251, 0);
-}
-article
-{
-  border: 2px solid rgb(119, 0, 255);
-
-}
-article#deLienVideo
-{
-  border: 10px solid rgb(0, 225, 255);
-
-}
-div.myIputs
-{
-  border: 3px solid rgb(255, 30, 0);
-}
-ul.icones
-{
-  border: 3px solid rgb(255, 30, 0);
-}
-button
-{
-  border: 3px solid rgb(255, 30, 0);
-}
-li
-{
-  border: 3px solid rgb(255, 30, 0);
-}
-input
-{
-  border: 3px solid rgb(255, 0, 200);
-}
-ul
-{
-  border: 3px solid rgb(255, 0, 200);
-}
-li#vignettes
-{
-  border: 3px solid rgb(255, 0, 200);
-}
-
-/* PAGE 2 */
-section.biographies
-{
-  border: 3px solid rgb(255, 251, 0);
-}
-section.videos
-{
-  border: 3px solid rgb(255, 251, 0);
-}
-div
-{
-  border: 3px solid rgb(255, 30, 0);
-}
-aside
-{
-  border: 3px solid rgb(255, 30, 0);
-}
-iframe
-{
-  border: 3px solid rgb(255, 30, 0);
-}
-img
-{
-  border: 3px solid rgb(255, 0, 200);
-}
-h4
-{
-  border: 3px solid rgb(255, 0, 200);
-}
-
-
 
 
 
